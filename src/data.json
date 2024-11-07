@@ -1,0 +1,54 @@
+{
+    "initialview": {
+        "maxZoom": 18,
+        "zoom": 17,
+        "center": {
+            "latitudedeg": -40,
+            "longitudedeg": -59,
+            "latitude": -6713403,
+            "longitude": -3767317
+        }
+    },
+    "baselayers": [
+        {
+            "title": "Argenmap",
+            "name": "argenmap",
+            "version": "1.0.0",
+            "service": "tms",
+            "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capasbaseargenmap@EPSG%3A3857@png/{z}{x}{-y}.png",
+            "attribution": "&copy; <a href='https://www.ign.gob.ar'>IGN</a>"
+        },
+        {
+            "title": "Argenmap GRIS",
+            "name": "argenmap_gris",
+            "version": "1.0.0",
+            "service": "tms",
+            "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_gris@EPSG%3A3857@png/%7Bz%7D/%7Bx%7D/%7B-y%7D.png",
+            "attribution": "&copy; <a href='https://www.ign.gob.ar'>IGN</a>"
+        },
+        {
+            "title": "Argenmap TOPOGRAFICO",
+            "name": "argenmap_topo",
+            "version": "1.0.0",
+            "service": "tms",
+            "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_topo@EPSG%3A3857@png/%7Bz%7D/%7Bx%7D/%7B-y%7D.png",
+            "attribution": "&copy; <a href='https://www.ign.gob.ar'>IGN</a>"
+        },
+        {
+            "title": "OpenStreetMap",
+            "name": "openstreetmap",
+            "version": "1.0.0",
+            "service": "tms",
+            "host": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            "attribution": "&copy; <a href='https://www.openstreetmap.org/copyright/'>OSM</a>"
+        },
+        {
+            "title": "Esri Imagenes",
+            "name": "esri_imagery",
+            "version": "1.0.0",
+            "service": "tms",
+            "host": "https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+            "attribution": "&copy; <a href='https://www.ign.gob.ar'>IGN</a>"
+        }
+    ]
+}
