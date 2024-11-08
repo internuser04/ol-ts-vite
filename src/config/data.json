@@ -1,6 +1,7 @@
 {
     "initialview": {
         "maxZoom": 18,
+        "minZoom": 4,
         "zoom": 17,
         "center": {
             "latitudedeg": -40,
@@ -15,7 +16,7 @@
             "name": "argenmap",
             "version": "1.0.0",
             "service": "tms",
-            "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capasbaseargenmap@EPSG%3A3857@png/{z}{x}{-y}.png",
+            "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/capasbaseargenmap@EPSG%3A3857@png/{z}/{x}/{-y}.png",
             "attribution": "&copy; <a href='https://www.ign.gob.ar'>IGN</a>"
         },
         {
@@ -23,7 +24,7 @@
             "name": "argenmap_gris",
             "version": "1.0.0",
             "service": "tms",
-            "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_gris@EPSG%3A3857@png/%7Bz%7D/%7Bx%7D/%7B-y%7D.png",
+            "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_gris@EPSG%3A3857@png/{z}/{x}/{-y}.png",
             "attribution": "&copy; <a href='https://www.ign.gob.ar'>IGN</a>"
         },
         {
@@ -31,7 +32,7 @@
             "name": "argenmap_topo",
             "version": "1.0.0",
             "service": "tms",
-            "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_topo@EPSG%3A3857@png/%7Bz%7D/%7Bx%7D/%7B-y%7D.png",
+            "host": "https://wms.ign.gob.ar/geoserver/gwc/service/tms/1.0.0/mapabase_topo@EPSG%3A3857@png/{z}/{x}/{-y}.png",
             "attribution": "&copy; <a href='https://www.ign.gob.ar'>IGN</a>"
         },
         {
@@ -39,7 +40,7 @@
             "name": "openstreetmap",
             "version": "1.0.0",
             "service": "tms",
-            "host": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            "host": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
             "attribution": "&copy; <a href='https://www.openstreetmap.org/copyright/'>OSM</a>"
         },
         {

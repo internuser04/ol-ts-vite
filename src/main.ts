@@ -1,12 +1,14 @@
-import './style.css';
+import './config/styles/style-main.css';
 import 'ol/ol.css';
-import Map from 'ol/Map';
-import View from 'ol/View';
-import TileLayer from 'ol/layer/Tile';
-import XYZ from 'ol/source/XYZ';
-import { fromLonLat } from 'ol/proj';
+// import Map from 'ol/Map';
+// import View from 'ol/View';
+// import TileLayer from 'ol/layer/Tile';
+// import XYZ from 'ol/source/XYZ';
+// import { fromLonLat } from 'ol/proj';
 import { ScaleLine } from 'ol/control';
 import { mapa } from './map/map';
+import {BASE_LAYERS} from "src/constants/base-layers"
+import { createMenuIcon } from './reusable-components/menu-icon';
 
 let nav = document.createElement('nav');
 document.body.appendChild(nav);
@@ -17,7 +19,13 @@ nav.innerHTML = `
   <div class="bar3"></div>
 </div>
 `;
+console.log( BASE_LAYERS.toString());
 
+// let nav2 = document.createElement("div");
+// document.body.appendChild(nav2);
+// nav2.innerHTML = `${BASE_LAYERS}`;
+
+createMenuIcon();
 document.getElementById('icon-bar')?.addEventListener('click', function () {
     myFunction(this);
 });
